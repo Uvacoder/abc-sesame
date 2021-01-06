@@ -156,6 +156,8 @@ const letters = {
 			return;
 		}
 
+		app.classList.add('active');
+
 		confetti = null;
 		sound = new Audio(letters[key.toLowerCase()].sound);
 		sound.play();
