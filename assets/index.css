@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Patrick Hand', cursive;
+}
+
+#app {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: #fff;
+}
+
+#confetti {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 0 100% 100% 0;
+    background-color: #fff;
+    z-index: 1;
+    height: 0;
+    width: 0;
+    transition: .7s;
+}
+
+.letter {
+    font-size: 16rem;
+    z-index: 3;
+    opacity: 0;
+    color: #fff;
+    transition: .5s;
+}
